@@ -1,0 +1,17 @@
+[
+  {
+    "route": "",
+    "params": {},
+    "title": "Index"
+  },
+  {
+    "route": "chat",
+    "params": {},
+    "title": "Chat"
+  },
+  {
+    "route": "layout",
+    "params": {},
+    "title": "Layout"
+  }
+]
