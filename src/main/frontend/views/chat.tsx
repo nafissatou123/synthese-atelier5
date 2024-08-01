@@ -18,11 +18,11 @@ export default function Chat(){
 
     return (
         <div className="p-3">
-            <h3>Chat Bot</h3>
             <Layout/>
+            <h3>Chat Bot</h3>
             <div>
                 <TextField style={{width :'80%'}} onChange={(e=>setQuestion(e.target.value))}/>
-                <Button theme="primary" onClick={send}>Send</Button>
+                <Button className="btn btn-primary" onClick={send}>Send</Button>
                 <div>
                     <Markdown>
                         {response}

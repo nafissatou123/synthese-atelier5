@@ -13,5 +13,10 @@
     "route": "layout",
     "params": {},
     "title": "Layout"
+  },
+  {
+    "route": "person",
+    "params": {},
+    "title": "Person"
   }
 ]

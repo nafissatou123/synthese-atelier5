@@ -15,17 +15,17 @@ public class ChatBotRagApplication {
         SpringApplication.run(ChatBotRagApplication.class, args);
     }
 
-//    @Bean
-//    CommandLineRunner commandLineRunner(PersonRepository personRepository){
-//        return args -> {
-//            for (int i=0; i<100 ; i++){
-//                Person person = Person.builder()
-//                        .name(UUID.randomUUID().toString().substring(0,8))
-//                        .email(UUID.randomUUID().toString().substring(0,8)+"email.com")
-//                        .build();
-//                personRepository.save(person);
-//            }
-//        };
-//    }
+    @Bean
+    CommandLineRunner commandLineRunner(PersonRepository personRepository){
+        return args -> {
+            for (int i=0; i<100 ; i++){
+                Person person = Person.builder()
+                        .name(UUID.randomUUID().toString().substring(0,8))
+                        .email(UUID.randomUUID().toString().substring(0,8)+"@gmail.com")
+                        .build();
+                personRepository.save(person);
+            }
+        };
+    }
 
 }
